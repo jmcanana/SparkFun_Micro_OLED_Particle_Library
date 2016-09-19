@@ -24,7 +24,7 @@
 #define swap(a, b) { uint8_t t = a; a = b; b = t; }
 #define _BV(x)	(1 << x)
 #define pgm_read_byte(x) (*(x))
-#define pgm_read_word(x) (*(x))
+//#define pgm_read_word(x) (*(x))
 #define pgm_read_float(x) (*(x))
 
 #define DC_DEFAULT		D6
@@ -154,7 +154,7 @@ public:
 	void drawChar(uint8_t x, uint8_t y, uint8_t c);
 	void drawChar(uint8_t x, uint8_t y, uint8_t c, uint8_t color, uint8_t mode);
 	void drawBitmap(const uint8_t * bitArray);
-	
+
 	uint8_t getLCDWidth(void);
 	uint8_t getLCDHeight(void);
 	void setColor(uint8_t color);
